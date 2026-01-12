@@ -2,8 +2,8 @@
 
 A real-time interactive simulation that transforms your body into a fluid particle system using **MediaPipe** and **HTML5 Canvas**.
 
-![Demo](https://via.placeholder.com/800x450?text=Particle+Bio-Simulator+Demo)
-*(Replace this with a screenshot or gif of your project!)*
+<img width="1919" height="1032" alt="image" src="https://github.com/user-attachments/assets/8c689359-ef8f-4013-a6e3-d16a7aa0a745" />
+
 
 ## 🚀 Features
 
