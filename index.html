@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particle Bio-Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Main Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Source Video (Hidden) -->
+    <video id="input-video" class="hidden" playsinline></video>
+
+    <!-- UI Overlay Layer -->
+    <div id="ui-layer">
+      <!-- Intro Screen -->
+      <div id="intro-screen" class="active">
+        <h1>Particle Bio-Simulator</h1>
+        <p>Interactive Face & Hand Tracking</p>
+        <button id="btn-enable-camera">Enable Camera</button>
+      </div>
+
+      <!-- Top Left: Controls -->
+      <div id="controls-panel" class="hidden">
+        <button class="mode-btn active" data-mode="attract">Attract</button>
+        <button class="mode-btn" data-mode="repel">Repel</button>
+      </div>
+
+      <!-- Top Center: Debug Preview -->
+      <div id="debug-container" class="hidden">
+        <canvas id="debug-canvas" width="256" height="144"></canvas>
+      </div>
+
+      <!-- Top Right: Status -->
+      <div id="status-panel" class="hidden">
+        <div class="status-indicator">
+          <span id="status-dot"></span>
+          <span id="status-text">Initializing...</span>
+        </div>
+      </div>
+
+      <!-- Bottom Right: Shortcuts -->
+      <div id="shortcuts-panel" class="hidden">
+        <div class="shortcut">
+          <span class="key">SPACE</span> <span class="label">Toggle Mode</span>
+        </div>
+        <div class="shortcut">
+          <span class="key">V</span> <span class="label">Toggle View</span>
+        </div>
+        <div class="shortcut">
+          <span class="key">✊</span> <span class="label">Change Theme</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
